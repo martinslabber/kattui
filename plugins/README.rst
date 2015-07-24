@@ -5,7 +5,7 @@ How To write a plugin
 Functions
 ---------
 
-A plugin must have a function named `do`.
+A plugin must have a function named :command:`do`.
 The do function must take 2 parameters: The class instance (self) and command line input as a string.
 
 The do function must return nothing.  (PS: Return True is a Quit at present.)
@@ -27,7 +27,9 @@ Rules
 -----
 
 KATTUI = True                                                                                                                        
+
 KATTUI_DENY = {'site': ['karoo', 'vkaroo']}                                                                                          
+
 KATTUI_ALLOW = {'nodetype': ['head']}                                                                                                
 
 Where
@@ -41,4 +43,7 @@ Debug
 Call `kat` with the `plugin` argument to see details of the various plugins.
 
 ::
+
     kat plugin
+
+
