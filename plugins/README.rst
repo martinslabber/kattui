@@ -29,6 +29,7 @@ Rules
 Rule Example.
 
 ::
+
         KATTUI = True
         KATTUI_DENY = {'site': ['karoo', 'vkaroo']}  
         KATTUI_ALLOW = {'nodetype': ['head']}     
