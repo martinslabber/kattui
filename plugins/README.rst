@@ -5,18 +5,18 @@ How To write a plugin
 Functions
 ---------
 
-A plugin must have a function named :command:`do`.
-The do function must take 2 parameters: The class instance (self) and command line input as a string.
+A plugin must have a function named *do*.
+The *do* function must take 2 parameters: The class instance (self) and command line input as a string.
 
-The do function must return nothing.  (PS: Return True is a Quit at present.)
+The *do* function must return nothing.  (PS: Return True is a Quit at present.)
 
 Help
 ----
 
-The doc string of the do function will be used as the help message for the plugin.
-If a function named help exist in the plugin that will be called to print the help.
+The doc string of the *do* function will be used as the help message for the plugin.
+If a function named *help* exist in the plugin that will be called to print the help.
 
-The help function must print the help and return nothing.
+The *help* function must print the help and return nothing.
 
 Autocomplete
 ------------
@@ -26,11 +26,12 @@ Not yet implemented.
 Rules
 -----
 
-KATTUI = True                                                                                                                        
+Rule Example.
 
-KATTUI_DENY = {'site': ['karoo', 'vkaroo']}                                                                                          
-
-KATTUI_ALLOW = {'nodetype': ['head']}                                                                                                
+::
+        KATTUI = True
+        KATTUI_DENY = {'site': ['karoo', 'vkaroo']}  
+        KATTUI_ALLOW = {'nodetype': ['head']}     
 
 Where
 -----

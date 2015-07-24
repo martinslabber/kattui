@@ -6,11 +6,10 @@ from katversion import get_version
 
 setup(name="kattui",
       version=get_version(),
-      description="Karoo Array Telescope text user interface",
+      description="Karoo Array Telescope Text User Interface",
       packages=find_packages(),
       scripts=["scripts/kat"],
-      # url='https://github.com/ska-sa/katstore',
-      # download_url='https://github.com/ska-sa/katstore',
+      url='https://github.com/martinslabber/kattui',
       license="BSD",
       classifiers=["Development Status :: 5 - Production/Stable",
                    "Intended Audience :: Developers",
@@ -20,7 +19,8 @@ setup(name="kattui",
                    "Topic :: Scientific/Engineering :: Astronomy"],
       platforms=["OS Independent"],
       install_requires=['cmd2',
-                        # 'katcp',
+                        # 'katcp',  # Enabling this here causes problems with
+                        # various versions of katcp.
                         ],
       keywords="kat kat7 ska MeerKAT",
       data_files=[('/usr/local/lib/kattui', ['plugins/stop.py']),
